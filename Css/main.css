@@ -1,0 +1,366 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+p{
+    color: hsl(201, 11%, 66%);
+    line-height: 1.6;
+}
+h1,h2,h3{
+    color: hsl(210, 10%, 33%);
+}
+section{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-image: url('../images/bg-header-desktop.png');
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+header .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+header .logo{
+    margin-bottom: 35px;
+}
+header .caption h1{
+    font-size:45px;
+}
+header .caption p{
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 8px;
+}
+header .links{
+    margin-top: 30px;
+}
+header .links a{
+    display: inline-block;
+    width: 200px;
+    height: 52px;
+    line-height: 52px;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 26px;
+    transition: 0.3s ease-in-out;
+}
+header .links a:hover{
+    opacity: 0.8;
+}
+header .links .one{
+    margin-right: 20px;
+    background-color: hsl(171, 66%, 44%);
+    border-bottom: 3px solid hsl(171deg 67% 34%);
+    box-shadow: 0px 4px 14px hsl(171deg 63% 50% / 45%);
+    
+}
+header .links .two{
+    margin-right: 20px;
+    background-color: hsl(233, 100%, 69%);
+    border-bottom: 3px solid hsl(233deg 56% 55%);
+    box-shadow: 0px 2px 15px #b3b3b3ab;
+}
+
+@media(max-width:500px) {
+    header{
+        background-image: url('../images/bg-header-mobile.png');
+    }
+    header .info{
+        width: 80%;
+    }
+    header .info h1{
+        font-size: 33px;
+    }
+    header .info p{
+        font-size: 17px;
+    }
+    header .links a{
+        width: 100%;
+        font-size: 19px;
+    }
+    header .links .one{
+        margin-bottom: 20px;
+    }
+}
+section .cont{
+    padding: 10px;
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+}
+section .cont h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+section .catalog{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+section .catalog .img{
+    width: 50%;
+}
+section .catalog .list{
+    width: 42%;
+    padding: 5px;
+}
+section .catalog .list ul li{
+    margin-bottom: 50px;
+}
+section .catalog .list ul li h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+section .catalog .list ul li p{
+    letter-spacing: 0.3px;
+    font-size: 15px;
+}
+@media (max-width:500px) {
+    section .cont{
+        width: 85%;
+    }
+    section .catalog{
+        flex-wrap: wrap;
+    }
+    section .catalog .img{
+        width: 100%;
+    }
+    section .catalog .list{
+        flex: 1;
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+section .access {
+    text-align: center;
+}
+section .access .info{
+    width: 550px;
+    margin: 30px auto;
+}
+section .access h2{
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+section .access p{
+    font-size: 18px;
+}
+section .access .img{
+    width: 70%;
+    display: inline-flex;
+    margin-top: 27px;
+}
+@media (max-width:500px) {
+    section .access .info{
+        width: 100%;
+    }
+    section .access .info h2{
+        font-size: 30px;
+    }
+    section .access .info p{
+        font-size: 17px;
+    }
+    
+}
+section .tools .info{
+    margin: 30px auto;
+    width: 600px;
+    text-align: center;
+}
+section .tools .info h2{
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+section .tools .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+    padding-top: 30px;
+}
+section .tools .content .box{
+    width: 27%;
+}
+section .tools .content .box svg{
+    margin-bottom: 20px;
+}
+section .content .box h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+@media (max-width:500px) {
+    section .tools .info{
+        width: 85%;
+    }
+    section .tools .content{
+        flex-wrap: wrap;
+    }
+    section .tools .content .box{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+section .brands{
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (max-width:500px) {
+    section .brands{
+        flex-direction: column;
+        align-items: center;
+    }
+    section .brands .img{
+        width: 40%;
+        margin-bottom: 50px;
+        
+    }
+}
+section .download{
+    text-align: center;
+    margin: 20px auto;
+    width: 650px;
+}
+section .download h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+section .download p{
+    margin-bottom: 15px;
+}
+section .download .links a{
+    display: inline-block;
+    width: 200px;
+    height: 52px;
+    line-height: 52px;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 26px;
+    transition: 0.3s ease-in-out;
+}
+section .download .links a:hover{
+    opacity: 0.8;
+}
+section .download .links .one{
+    margin-right: 20px;
+    background-color: hsl(171, 66%, 44%);
+    border-bottom: 3px solid hsl(171deg 67% 34%);
+    box-shadow: 0px 4px 14px hsl(171deg 63% 50% / 45%);
+}
+section .download .links .two{
+    margin-right: 20px;
+    background-color: hsl(233, 100%, 69%);
+    border-bottom: 3px solid hsl(233deg 56% 55%);
+    box-shadow: 0px 2px 15px #b3b3b3ab;
+}
+@media (max-width:500px) {
+    section .download{
+        width: 100%;
+    }
+    section .download h2{
+        font-size: 30px;
+    }
+    section .download .info p{
+        margin-bottom: 25px;
+    }
+    section .download .links a{
+        width: 100%;
+        font-size: 19;
+    }
+    section .download .one{
+        margin-bottom: 20px;
+    }
+}
+.footer{
+    background-color: #e6e6e652;
+    padding-bottom: 15px;
+}
+section .end{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+section .end .list{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+section .end .list ul{
+    width: 27%;
+}
+section .end .list li{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 19px;
+    color: hsl(210, 10%, 33%);
+}
+section .end .social svg{
+    margin-right: 15px;
+}
+@media (max-width:500px) {
+    section .end{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    section .end .logo{
+        margin-bottom: 25px;
+    }
+    section .end .list{
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+    section .end .list ul{
+        width: 100%;
+    }
+    section .end .list li{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width:500px) {
+    .container {
+        width: 450px;
+    }
+}
+@media (min-width:1440px) {
+    .container {
+        width: 1400px;
+    }
+}
